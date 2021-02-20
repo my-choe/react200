@@ -8,4 +8,5 @@
    * [`005` 생명주기 함수 constructor(props) 사용하기](https://github.com/my-choe/react200/commit/1ed114112a76324f6c4110e9121ac41a34362394)
    * [`006` 생명주기 함수 static getDerivedStateFormProps(props, state) 사용하기](https://github.com/my-choe/react200/commit/4d5f479aff69bc9357ca1d59c6048b0aadc97c9d)
    * [`007` 생명주기 함수 componentDidMount() 사용하기](https://github.com/my-choe/react200/commit/c14bfafd063ea9eba8ec9a121e32ad46f80ad138)
+   * [`008` 생명주기 함수 shouldComponentUpdate() 사용하기(https://github.com/my-choe/react200/commit/e7bef30bfcf3079dc6d3394499c7cef1a00b2fcd)
 
