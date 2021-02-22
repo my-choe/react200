@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Variable from './R010_Variable';
+import SpreadOperator from './R011_SpreadOperator';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <Variable/>
+      <SpreadOperator/>
     </div>
   );
 }
