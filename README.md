@@ -17,4 +17,10 @@
    * [`014` forEach()함수 사용하기](https://github.com/my-choe/react200/commit/afdb5f917225bd71f56cea40eac680e569745a53)
    * [`015` map()함수 사용하기](https://github.com/my-choe/react200/commit/f71b02ccaaebdfc7b15fd8016c9eb58cc6092d2a)
    * [`016` jquery 사용하기](https://github.com/my-choe/react200/commit/64b68908aa381f86a3ead0f3801628cdb45f7619)
+<br/>
 
+### 🔥 PART 2 초급 - React.js 기초 다지기
+ * [`017` props 사용하기](https://github.com/my-choe/react200/commit/0f14bb85609bd1f2505b83ad6f9b7e7a4224291b)
+ * [`018` props 자료형 선언하기](https://github.com/my-choe/react200/commit/1513b7af8b3fe379e5c08d1a95e32fa5075609ae)
+ * [`019` props Boolean으로 사용하기](https://github.com/my-choe/react200/commit/d39496709bd46cf35a88650696862f8fa46457c8)
+ * [`020` props 객체형으로 사용하기](https://github.com/my-choe/react200/commit/1c4e86cf7e5855b8eb6c4c14d302e451856bfb9c)
