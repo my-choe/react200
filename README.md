@@ -32,3 +32,4 @@
  * [`025` setState() 함수 사용하기](https://github.com/my-choe/react200/commit/5be47387b9862f891a7dca20967f3b2bfaf0c5f9)
  * [`026` state를 직접 변경한 후 forceUpdate() 함수 사용하기](https://github.com/my-choe/react200/commit/49cefc39775e91ee8549da8578fcecb0a8a20847)
  * [`027` Component 사용하기(class형 컴포넌트)](https://github.com/my-choe/react200/commit/ed945d758c887a2e2d22870281b9a5eb3f3c53b5)
+ * [`028` PureComponent 사용하기(class형 컴포넌트)](https://github.com/my-choe/react200/commit/7468a3253b2206abc02259ad4da7b2ed668c752b)
