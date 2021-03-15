@@ -36,3 +36,4 @@
  * [`029` shallow-equal 사용하기(class형 컴포넌트)](https://github.com/my-choe/react200/commit/7801ef626b5f905f91fdb8106a406f48354a4cef)
  * [`030` 함수형 컴포넌트 사용하기](https://github.com/my-choe/react200/commit/16a4032a5bf07504c44244c8e674a571b7e4e93f)
  * [`031` hook 사용하기](https://github.com/my-choe/react200/commit/8da1c2c60c157ced7771748f1dd19de09f1a52ed)
+ * [`032` Fragments 사용하기](https://github.com/my-choe/react200/commit/8a8ccbcf1fee0bc670915f12fbda1d682eebd39f)
