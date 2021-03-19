@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ReactstrapCard from './R040_ReactstrapCard';
+import ReactstrapCarousel from './R041_ReactstrapCarousel';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <ReactstrapCard/>
+      <ReactstrapCarousel/>
     </div>
   );
 }
