@@ -1,5 +1,5 @@
 div {
-  background-color: rgb(162, 127, 243);
+  background-color: rgb(170, 150, 216);
   color: rgb(255, 255,255);
   padding: 40px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -8,7 +8,7 @@ div {
 
 h1 {
   color: white;
-  background-color: #2EFE2E;
+  background-color: #83d383;
   padding: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
