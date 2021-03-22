@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Modal from './R048_ReactstrapModal';
+import Navbar from './R049_ReactstrapNavbar';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div>
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <Modal/>
+      <Navbar/>
     </div>
   );
 }
