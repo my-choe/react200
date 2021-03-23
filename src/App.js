@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactonChange from './R067_onChange';
+import ReactMouseMove from './R068_onMouseMove';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
-      <ReactonChange/>
+      <ReactMouseMove/>
     </div>
   );
 }
