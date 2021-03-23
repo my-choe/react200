@@ -1,11 +1,11 @@
 import React from 'react';
-import AxiosPost from './R062_AxiosPost';
+import CallbackFunc from './R063_CallbackFunc';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
-      <AxiosPost/>
+      <CallbackFunc/>
     </div>
   );
 }
