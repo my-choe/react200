@@ -1,5 +1,5 @@
 import React from 'react';
-import Promise from './R064_Promise';
+import Promise from './R065_Promise';
 
 function App() {
   return (
