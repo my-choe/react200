@@ -6,9 +6,9 @@ class R058_Sweetalert2Comfirm extends Component {
         Swal.fire({
             title: '정말 삭제하시겠습니까?',
             icon: 'question',
-            showConfirmButton: true,
+            showCancelButton: true,
             confirmButtonColor: 'rgb(163 151 241)',
-            cancelButtonColor: '#01DF01',
+            cancelButtonColor: 'rgb(151 189 241)',
             confirmButtonText: '예',
             cancelButtonText: '아니오'
         }).then((result) => {
