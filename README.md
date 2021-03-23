@@ -74,3 +74,9 @@
 
 
 ### 🔥 PART 3 중급 - React.js 주요 개념 이해하기
+  * [`066` click이벤트 사용하기(onClick)](https://github.com/my-choe/react200/commit/12267432508372c3c19f8674a82d3299fd819d62)
+  * [`067` change이벤트 사용하기(onChange)](https://github.com/my-choe/react200/commit/7af383f1f4def1a445505bf0a2f0bb17140db093)
+  * [`068` mousemove 이벤트 사용하기(onMouseMove)](https://github.com/my-choe/react200/commit/22a0bc5e5e9d886fcc1faf0719964c3a6d7a1ec9)
+  * [`069` mouseover 이벤트 사용하기(onMouseOver)](https://github.com/my-choe/react200/commit/47cf2ab9a670304895e537f5d35d177acff44b21)
+  * [`070` mouseout 이벤트 사용하기(onMouseOut)](https://github.com/my-choe/react200/commit/30059a8658854ee0cfc5edad2c0e9412b9c7824f)
+  * [`071` key 이벤트 사용하기(onKeyDown, onKeyPress, onKeyUp)](https://github.com/my-choe/react200/commit/867be1ce976fde739cdc26efbf9b0c97965ecf59)
