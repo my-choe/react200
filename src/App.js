@@ -1,11 +1,11 @@
 import React from 'react';
-import Promise from './R065_Promise';
+import ReactonClick from './R066_onClick';
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
-      <Promise/>
+      <ReactonClick/>
     </div>
   );
 }
