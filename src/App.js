@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import StrAddButton from './StrAddButton';
 
 /** 
- * redux만 사용해도 충분히 스토어 데이터를 사용하고 변경할 수 있다.
- * react-redux는 react를 react와 연동해서 사용하기 편리하도록 만든 라이브러리다.
- * [npm install --save react-redux] 로 설치한다.
- * 
- * react-redux의 장점
- * 1. store를 하위 컴포넌트에 매번 상속하지 않고 사용할 수 있다.
- * 2. 스토어 데이터를 사용, 변경하는 코드를 모듈화 해 컴포넌트 내에 중복코드사용을 최소화할 수 있다.
- * 
- * react-redux도 redux와 마찬가지로 스토어 > 컴포넌트 > 액션 > 리듀서 > 다시 스토어 과정을 통해 데이터를 변경한다.
- * 차이점은 스토어 > 컴포넌트, 컴포넌트 > 액션 단계에서 connect라는 react-redux 패키지 함수가 사용된다는 것이다.
- * actions 폴더의 index.js와 reducer 폴더의 index.js파일은 변경 사항이 없다.
+ * react-redux 패키지의 connect 함수는 파라미터를 4개까지 받을 수 있는데,
+ * 파라미터 위치에 따라 미리 정의된 함수나 object를 사용할 수 있다.
+ * 예제에서는 2개 파라미터를 사용한다.
+ * 첫번째 파라미터(mapStateToProps)는 스토어의 상태값을 컴포넌트 props에 할당하는 함수이고,
+ * 두번째 파라미터(mapDispatchToProps)는 dispatch함수를 컴포넌트 함수에 바인딩하는 함수다.
  * 
  */
 class App extends Component {
@@ -20,11 +15,25 @@ class App extends Component {
     return (
       <div>
         <h1>Start React 200!</h1>
-        <span>{this.props.store.getState().data.str}</span><br/>
-        <StrAddButton store={this.props.store}/>
+        {/* <span>{this.props.store.getState().data.str}</span><br/>
+        <StrAddButton store={this.props.store}/> */}
+        <span>{this.props.str}</span><br/>
+        <StrAddButton AppProp="200"/>
       </div>
     );
   }
 }
+
+// mapStateToProps 함수는 첫 번째 파라미터로 스토어의 state 변수를,
+// 두번째 파라미터로 부모 컴포넌트에서 전달한 props변수를 받는다.
+let mapStateToProps = (state, props) => {
+  console.log('Props from index.js : ' + props.indexProp)
+  return {
+    str: state.data.str,
+  };
+};
+
+// 첫번째 파라미터는 mapStateToProps함수로 스토어의 state값에 접근할 수 있다.
+App = connect(mapStateToProps, null)(App);
 
 export default App;
