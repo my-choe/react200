@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import {createStore} from 'redux';
 import reducers from './reducers';
+import reportWebVitals from './reportWebVitals';
 
 /**
  * redux는 컨텍스트와 마찬가지로 데이터를 필요한 컴포넌트에서만 요청해 사용할 수 있다.
@@ -18,8 +19,9 @@ import reducers from './reducers';
  * 생성한 store를 App 컴포넌트에 전달한다. render 함수를 listener라는 내부함수에 위치시킨다.
  * store를 구독하면 store데이터에 변화가 있을 때 listener 함수 내부의 render함수를 실행하고 변경된 데이터를 렌더링한다.
  * listener() : render함수를 listener함수로 감쌌기 때문에 초기 렌더링을 위해 수동으로 render 함수를 실행시켜준다.
- * 78~80q번 실행결과는 80번에서 확인 가능하다.
+ * 78~80번 실행결과는 80번에서 확인 가능하다.
  */
+
 const store = createStore(reducers); // 스토어 생성함수 import
 
 const listener = () => {
@@ -31,3 +33,5 @@ const listener = () => {
 
 store.subscribe(listener);
 listener();
+
+reportWebVitals();
