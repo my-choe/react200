@@ -1,13 +1,21 @@
 import React from 'react';
-import Childern2 from "./contextChildren2";
+import {Consumer} from './R077_ContextApi';
 
-/** 부모컴포넌트의 데이터를 사용하지 않고 손자 컴포넌트 contextChildern2를 return 한다.
- * 손자 컴포넌트에서 사용할 데이터를 전달하지 않아도 된다.
+/**
+ * 버튼을 클릭하면, 파라미터로 전달받은 R077_ContextApi컴포넌트의 setStateFunc("react200")을 호출한다.
+ * 이때 R077_ContextApi컴포넌트의 state 변수 name값을 react200으로 할당한다.
  */
+
 class contextChildren extends React.Component {
     render () {
         return (
-            <Childern2 />
+           <Consumer>
+               {contextValue=>
+                <button onClick={e => contextValue.setStateFunc("react200")}>
+                    {contextValue.name}_button
+                </button>
+               }
+           </Consumer>
         )
     }
 }
