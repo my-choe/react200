@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import reactRouter from './R089_reactRouter';
-import reactRouter2 from './R089_reactRouter2';
 import '../css/new.css'; // css
 import HeaderAdmin from './Header/HeaderAdmin'; // header
 import Footer from './Footer/Footer';
+import LoginForm from './LoginForm';
 
 /** 
  * 라우팅 상관 없이 항상 표시돼야 하는 header와 footer 작업
@@ -16,8 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <HeaderAdmin/>
-        <Route exact path='/' component={reactRouter} />
-        <Route exact path='/reactRouter2' component={reactRouter2} />
+        <Route exact path='/' component={LoginForm} />
         <Footer/>
       </div>
     );

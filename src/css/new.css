@@ -121,7 +121,7 @@ body{min-width:1280px; }
 .gnb > ul > li.on > a{color: #25489e;}
 
 /*main*/
-.main{height: 800px; width: 100%;background-size: 150px; background: url(../img/main/mv1.jpg) center no-repeat; display: table; table-layout: fixed;}
+.main{height: 800px; width: 100%;background-size: 150px; background-color:#aaa; display: table; table-layout: fixed;}
 .m_login{display: table-cell; text-align: center; vertical-align: middle; }
 .m_login h3{font-size: 55px; line-height: 67px; color: #fff; font-weight: 400; letter-spacing: 0; vertical-align: middle; margin-bottom: 39px;}
 .m_login h3 span{margin-right: 17px;}
@@ -139,14 +139,14 @@ body{min-width:1280px; }
 .m_login ul li a{position: relative; text-align: left; font-size: 14px; line-height: 14px; color: rgba(255,255,255,0.8); padding: 0 14px; font-weight: 400;; transition:.3s;}
 .m_login ul li:first-child a:after{position: absolute; content:''; width: 1px; height: 9px; background: #fff; opacity: 0.15; right: 0; top: 50%; margin-top: -3px;}
 .m_login ul li:first-child a{padding-left: 0;}
-.m_login .s_bt{background: #c79448; color: #f2f2f2; font-size: 20px; line-height: 65px; height: 65px; border: 0; width: 418px; transition:.3s;}
+.m_login .s_bt{background: #48517b; color: #f2f2f2; font-size: 20px; line-height: 65px; height: 65px; border: 0; width: 418px; transition:.3s;}
 
 .btn_confirm_m{text-align: center; overflow: hidden; width: 418px; margin-top: 30px;}
 .bt_ty_m{width: 204px; display: block; float: left; margin-right: 10px; height: 65px; line-height: 65px; font-size: 20px; text-align: center; }
 .bt_ty_m:hover:before{left: -13%;}
 
 /*오버*/
-.m_login .s_bt:hover{background: #f3a721;}
+.m_login .s_bt:hover{background: #727fbd;}
 .m_login ul li:hover a{color: #fff;}
 .in_ty1:hover{box-shadow:0px 0px 20px rgba(255,255,255,0.3); }
 
