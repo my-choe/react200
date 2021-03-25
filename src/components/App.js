@@ -4,6 +4,7 @@ import '../css/new.css'; // css
 import HeaderAdmin from './Header/HeaderAdmin'; // header
 import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
+import reactDebounce from './R094_reactDebounce';
 
 /** 
  * 라우팅 상관 없이 항상 표시돼야 하는 header와 footer 작업
@@ -16,6 +17,7 @@ class App extends Component {
       <div className="App">
         <HeaderAdmin/>
         <Route exact path='/' component={LoginForm} />
+        <Route exact path='/Debounce' component={reactDebounce} />
         <Footer/>
       </div>
     );
