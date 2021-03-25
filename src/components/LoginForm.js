@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
+/** 
+ * react는 <img> 태그에 require 문법을 사용해 이미지 경로를 할당해야 한다.
+ */
 class LoginForm extends Component {
     render () {
         return (
