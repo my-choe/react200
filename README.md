@@ -93,3 +93,6 @@
   * [`082` react-redux로 스토어 데이터 사용하기](https://github.com/my-choe/react200/commit/ee4074c0d02ae5035c29a5e6dcb437458789898c)
   * [`083` react-redux로 스토어 데이터 변경하기](https://github.com/my-choe/react200/commit/724f8e2f476b569c50898358b8c3bc27434a04c4)
   * [`084` redux 미들웨어 사용하기](https://github.com/my-choe/react200/commit/262420b0f41098356af6cdd632773fe7c6bee409)
+  * [`085` react-cookies save 사용하기](https://github.com/my-choe/react200/commit/98282b98023e072ff6cec003c3983b612d7345d3)
+  * [`086` react-cookies load 사용하기](https://github.com/my-choe/react200/commit/5e5c320df6f46afd24a80f5e4cb8d37020965905)
+  * [`087` react-cookies remove 사용하기](https://github.com/my-choe/react200/commit/51664d871c0e0b4bdf3f963da6ea5a7fdaef64ac)
