@@ -5,11 +5,10 @@ import HeaderAdmin from './Header/HeaderAdmin'; // header
 import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
 import reactThrottle from './R095_reactThrottle';
+import floatingPopulationList from './Floating_population/floatingPopulationList';
 
 /** 
- * 라우팅 상관 없이 항상 표시돼야 하는 header와 footer 작업
- * 상단에 header, 하단에 footer 영역이 고정으로 위치하고 중간영역에 라우팅되는 컴포넌트 표시.
- * 루트 경로(/)에서 /reactRouter2 경로로 url을 이동해도 중간에 표시되는 컴포넌트 영역만 변경됨.
+ * 서울시 유동 인구 데이터 사용하기 1 - 리스트 페이지 만들기
  */
 class App extends Component {
   render(){
@@ -17,7 +16,8 @@ class App extends Component {
       <div className="App">
         <HeaderAdmin/>
         <Route exact path='/' component={LoginForm} />
-        <Route exact path='/reactThrottle' component={reactThrottle} />
+        <Route exact path='/Throttle' component={reactThrottle} />
+        <Route exact path='/floatPopluationList' component={floatingPopulationList} />
         <Footer/>
       </div>
     );
