@@ -6,6 +6,7 @@ import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
 import reactThrottle from './R095_reactThrottle';
 import floatingPopulationList from './Floating_population/floatingPopulationList';
+import rechartsSimpleLineChart from './Floating_population/rechartsSimpleLineChart';
 
 /** 
  * 서울시 유동 인구 데이터 사용하기 1 - 리스트 페이지 만들기
@@ -18,6 +19,7 @@ class App extends Component {
         <Route exact path='/' component={LoginForm} />
         <Route exact path='/Throttle' component={reactThrottle} />
         <Route exact path='/floatPopluationList' component={floatingPopulationList} />
+        <Route exact path='/rechartsSimpleLineChart' component={rechartsSimpleLineChart} />
         <Footer/>
       </div>
     );
