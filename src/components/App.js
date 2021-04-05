@@ -9,6 +9,7 @@ import floatingPopulationList from './Floating_population/floatingPopulationList
 import rechartsSimpleLineChart from './Floating_population/rechartsSimpleLineChart';
 import floatingPopulationListChart from './Floating_population/floatingPopulationListChart';
 import floatingPopulationAreaChart from './Floating_population/floatingPopulationAreaChart';
+import floatingPopulationBarChart from './Floating_population/floatingPopulationBarChart';
 
 /** 
  * 서울시 유동 인구 데이터 사용하기 1 - 리스트 페이지 만들기
@@ -24,6 +25,7 @@ class App extends Component {
         <Route exact path='/rechartsSimpleLineChart' component={rechartsSimpleLineChart} />
         <Route exact path='/floatingPopulationListChart' component={floatingPopulationListChart} />
         <Route exact path='/floatingPopulationAreaChart' component={floatingPopulationAreaChart} />
+        <Route exact path='/floatingPopulationBarChart' component={floatingPopulationBarChart} />
         <Footer/>
       </div>
     );
