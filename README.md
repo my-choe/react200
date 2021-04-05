@@ -107,3 +107,8 @@
   * [`096` 서울시 유동인구 데이터 사용하기 1 - 리스트 페이지 만들기](https://github.com/my-choe/react200/commit/7604fe42e79e8570dbf61d902efd4dc797c901d0)
   * [`099` 서울시 유동인구데이터 사용하기4 - axios로 api 호출하기](https://github.com/my-choe/react200/commit/12b0f042bd6c5b534570a28269aa4602f9e910ba)
   * [`100` recharts로 LineChart 구현하기 1](https://github.com/my-choe/react200/commit/e14943d4c4e52856cb6bfaefee59029b1f77e568)
+  * [`101` recharts로 LineChart구현하기2 - (서울시 유동 인구 데이터)](https://github.com/my-choe/react200/commit/db1de051810bd202ed07372d9ae7a5e3f8983f62)
+  * [`102` recharts로 AreaChart 구현하기(서울시 유동인구 데이터)](https://github.com/my-choe/react200/commit/bd1278a4ad34428d01e2e01a95ecf0cf427d5151)
+  * [`103` recharts로 BarChart 구현하기(서울시 유동인구 데이터)](https://github.com/my-choe/react200/commit/5a7e10424e02d6953158fbdb4a9354f46a1dfb24)
+  * [`104` recharts로 ComposedChart구현하기(서울시 유동인구 데이터)](https://github.com/my-choe/react200/commit/ac9b9770f339ccf04e15a9ab6f3d46d694627723)
+  * [`105` recharts로 ScatterChart 구현하기(서울시 유동인구 데이터)](https://github.com/my-choe/react200/commit/2e7873131f04b0096c1443a77b8af51ba7ff1cdd)
