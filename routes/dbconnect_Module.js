@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
   port: "3306",
   database: 'react',
   user: "admin",
-  password: "react200RDS",
+  password: "react200",
 });
 
 router.post("/", (req, res) => {
