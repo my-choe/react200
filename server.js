@@ -12,10 +12,13 @@ var express = require('express');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var swtoolRouter = require("./routes/SwtoolRout");
+
 var app = express();
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/api/Swtool', swtoolRouter);
 
 // node 서버 포트를 5000으로 설정하는 코드 추가
 const port = process.env.PORT || 5000;
