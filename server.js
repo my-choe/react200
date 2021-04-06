@@ -1,13 +1,10 @@
-/** node경로의 app.js파일은 react에서 App.js와 동일한 라우팅 기능을 담당한다.
- * (라우팅이란, 네트워크 주소에 따라 목적지 경로를 체계적으로 결정하는 경로 선택 과정)
- * express 프레임워크에서 기본적으로 라우터 구조가 잡혀있기 때문에 api를 간편하게 구현할 수 있다.
- * 
- * node.js는 back-end, front-end도 구현할 수 있는 언어지만
- * front-end 언어로는 node보다 react가 강점이 많기 때문에 node 서버는 back-end api 서버로만 사용할 것이다.
- * node경로에서 불필요한 front-end관련 소스(public, views 폴더)를 삭제한다.
- * 
- * node 경로의 app.js파일명을 react의 App.js와 구분하기 위해 server.js로 수정한다.
- * server.js에서 불필요한 코드를 삭제하고 다음과 같이 수정한다.
+/** 
+ * //package.json 설명
+ * concurrently는 여러 개의 명령어를 동시에 실행할 수 있게 도와주는 패키지다.
+ * [npm install --save concurrently]
+ * 추가로 nodemon 패키지를 설치한다. 
+ * nodemon은 node폴더의 소스가 수정될 때 자동으로 node 서버를 재시작 시켜준다.
+ * [npm install --g nodemon]
  */
 
 var express = require('express');
@@ -20,4 +17,13 @@ var app = express();
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-module.exports = app;
+// node 서버 포트를 5000으로 설정하는 코드 추가
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Listening on port ${port}`));
+
+/**
+ * cmd 하나로 react와 node 서버 동시 구동 가능.
+ * yarn dev명령어를 실행하면 react와  node 서버가 구동 됨
+ * /ApiPostJson 경로를 호출해 react페이지에서 node api를 정상적으로 호출한 것을 확인한다.
+ * (안 되면 react200에 npm install --g yarn 설치)
+ */
