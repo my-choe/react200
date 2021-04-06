@@ -16,7 +16,7 @@ const connection = mysql.createConnection({
 
 router.post("/", (req, res) => {
   const mybatisMapper = require("mybatis-mapper");
-  var param = req.body; //Swtool 에서 req.body에 할당한 json 형태의 데이터를 가져옴(line6에 bodyParser.json() 함수 사용)
+  var param = req.body;
 
   //mybatis mapper경로 설정
   mybatisMapper.createMapper(['./models/'+param.mapper+'.xml']);
