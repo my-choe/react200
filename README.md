@@ -121,3 +121,13 @@
 
 ### 🔥 PART 5 실무 - 개발부터 배포까지 실무 응용
   * [`106`,`107` node.js express 프레임워크 설치하기, node 서버 구동하기](https://github.com/my-choe/react200/commit/a35937f0931e6afb097378e3e10a9f97cafdddd5)
+  * [`108` node서버 api 호출하기](https://github.com/my-choe/react200/commit/2dc10f0420076af0102fce00e1543ed998b0da39)
+  * [`109` react 서버와 node 서버를 프록시로 연결하기](https://github.com/my-choe/react200/commit/cc373f9e29c7d128552b55d75f6eda4f541989b9)
+  * [`110` node 서버 api를 get로 json데이터 호출하기](https://github.com/my-choe/react200/commit/8bcdfbb5037acf506e3b59b4eeffb05dbc04fe3c)
+  * [`111` node서버 api를 post로 json 데이터 호출하기](https://github.com/my-choe/react200/commit/5f283cc706bd0cec66ae4139c470fa358fc7befe)
+  * [`112` concurrently로 react, node 서버 한 번에 구동하기](https://github.com/my-choe/react200/commit/8d19542a7c84fa4e2b104415347eaaaf15593e97)
+  * [`122` NODE 조회 api 만들기1 - body-parser 패키지 사용하기](https://github.com/my-choe/react200/commit/3a8a439e8a4c07fc522b927eafde66086e67e163)
+  * [`123` NODE 조회 api 만들기 2 - mysql 서버 연결하기](https://github.com/my-choe/react200/commit/6bb191968d506900922940423849c8aba8f15380)
+  * [`124` NODE 조회 api 만들기3 -mybatis 패키지 사용하기](https://github.com/my-choe/react200/commit/0d71f76006ccf98714322b53093e3622a8a7acf3)
+  * [`125` NODE 조회 api 만들기 4 - api 호출로 데이터 확인하기](https://github.com/my-choe/react200/commit/8369386a8eb3e0ecd147748a7b0e2e6e795768c0)
+  * [`126` REACT 조회 페이지 만들기](https://github.com/my-choe/react200/commit/1515f94f14aa9ac3c2c1ab7e0d0b0dd99c98ef5b)
