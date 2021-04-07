@@ -50,7 +50,7 @@ class SoftwareList extends Component {
                     <td>{reg_date}</td>
                     <td>
                         <Link to={'/AdminSoftwareView/'+data.swt_code} 
-                        className="bt_c1 bt_c2 w50_b">수정</Link>
+                        className="bt_c1 bt_c2 w50_b">수정</Link>&nbsp;
                         <a href="#n" class="bt_c1 w50_b" >삭제</a>
                     </td>
                 </tr>
