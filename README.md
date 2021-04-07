@@ -131,3 +131,7 @@
   * [`124` NODE 조회 api 만들기3 -mybatis 패키지 사용하기](https://github.com/my-choe/react200/commit/0d71f76006ccf98714322b53093e3622a8a7acf3)
   * [`125` NODE 조회 api 만들기 4 - api 호출로 데이터 확인하기](https://github.com/my-choe/react200/commit/8369386a8eb3e0ecd147748a7b0e2e6e795768c0)
   * [`126` REACT 조회 페이지 만들기](https://github.com/my-choe/react200/commit/1515f94f14aa9ac3c2c1ab7e0d0b0dd99c98ef5b)
+  * [`127` DB 연결 풀 구현하기](https://github.com/my-choe/react200/commit/d7b2141e7022ba0851c4fd3cd800caa36a28dc0b)
+  * [`128` NODE 등록 api 만들기 1 - insert 라우터 분기하기](https://github.com/my-choe/react200/commit/f3ff84ee9b31832a00250b29661d77f3022fd404)
+  * [`129` NODE 등록 api 만들기 2 - insert쿼리 추가, response 처리하기](https://github.com/my-choe/react200/commit/80ebce9fcfcb653694a61a9b3dcb8d178da389ed)
+  * [`130` REACT 등록 페이지 만들기](https://github.com/my-choe/react200/commit/b2499f440de6ecd31e351af591b8b0720c24c720)
