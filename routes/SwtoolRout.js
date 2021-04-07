@@ -4,7 +4,6 @@ var router = express.Router();
 const bodyParser = require('body-parser');
 //body-parser 패키지의 urlencoded함수를 실행하면 &key1=value1&key2=value2와 같은 형태로 전달되는 데이터를 추출할 수 있다.
 router.use(bodyParser.urlencoded({ extended: true }));
-// 오류 나는 거 추가하니 수정됨,,
 router.use(bodyParser.json());
 
 /**
@@ -14,12 +13,13 @@ router.use(bodyParser.json());
 router.post('/', (req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     var type = req.query.type;
+
+    // Mysql Api 모듈(CRUD)
+    var dbconnect_Module = require('./dbconnect_Module');
+
     if(type == 'list'){
       //Swtool 리스트 조회
       try {
-        // Mysql Api 모듈(CRUD)
-        var dbconnect_Module = require('./dbconnect_Module');
-    
         //Mysql 쿼리 호출 정보 입력
         req.body.mapper = 'SwToolsMapper';//mybatis xml 파일명
         req.body.crud = 'select';//select, insert, update, delete 중에 입력
@@ -35,6 +35,19 @@ router.post('/', (req, res, next) => {
         next('route')
       } catch (error) {
         console.log("Module > dbconnect error : "+ error);      
+      }
+    }else if(type == 'save'){
+      //Swtool 관리자 저장
+      try{
+        // Mysql 쿼리 호출 정보 입력
+        req.body.mapper = 'SwToolsMapper';//mybatis xml 파일명
+        req.body.crud = 'insert';//select, insert, update, delete 중에 입력
+        req.body.mapper_id = 'insertSwToolsInfo';
+
+        router.use('/', dbconnect_Module);
+        next('route')
+      } catch(error) {
+        console.log("Module > dbconnect error : " + error);
       }
     }
 });
