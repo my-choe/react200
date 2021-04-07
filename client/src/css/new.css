@@ -134,7 +134,7 @@ body{min-width:1280px; }
 .in_ty1 input{height: 55px; line-height: 55px; border: 0 !important; font-size: 16px; color: #9a9a9a; width: 355px; outline:none; padding-left: 18px;}
 .in_ty1 input::placeholder {color: #9a9a9a; font-size: 16px; line-height: 55px; }
 
-.m_login ul{overflow: hidden; clear: both; margin-top: 20px; margin-bottom: 32px;}
+.m_login ul{overflow: hidden; clear: both; margin-top: 20px; margin-bottom: 32px; padding-left: 30%;}
 .m_login ul li{float: left;}
 .m_login ul li a{position: relative; text-align: left; font-size: 14px; line-height: 14px; color: rgba(255,255,255,0.8); padding: 0 14px; font-weight: 400;; transition:.3s;}
 .m_login ul li:first-child a:after{position: absolute; content:''; width: 1px; height: 9px; background: #fff; opacity: 0.15; right: 0; top: 50%; margin-top: -3px;}
