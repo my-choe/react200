@@ -4,12 +4,14 @@ var router = express.Router();
 const bodyParser = require('body-parser');
 //body-parser 패키지의 urlencoded함수를 실행하면 &key1=value1&key2=value2와 같은 형태로 전달되는 데이터를 추출할 수 있다.
 router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
 
 /**
  * http://localhost:5000/api/Swtool?type=list와 같은 호출url에서 type이라는 key의 value(list)를 추출하기 위해서는
  * req.query문법으로 접근해야 한다. type값에 따라 호출하는 정보를 분기처리한다.
  */
 router.post('/', (req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
     var type = req.query.type;
     if(type == 'list'){
       //Swtool 리스트 조회

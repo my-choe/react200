@@ -17,8 +17,8 @@ class SoftwareList extends Component {
     }
 
     callSwToolListApi = async () => {
-        axios.post('/api/Swtool?type=list',{}
-        )
+        axios.post('/api/Swtool?type=list', {
+        })
         .then( response => {
             try {
                 this.setState({ responseSwtoolList: response });
@@ -66,7 +66,7 @@ class SoftwareList extends Component {
                     <div class="li_top">
                         <h2 class="s_tit1">Software Tools 목록</h2>
                         <div class="li_top_sch af">
-                        <Link to={'/AdminSoftwareView/register'} className="sch_bt2 wi_au">Tool 등록</Link>
+                        <Link to={'/SoftwareView/register'} className="sch_bt2 wi_au">Tool 등록</Link>
                         </div>
                     </div>
 

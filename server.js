@@ -12,12 +12,14 @@ var express = require('express');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var swtoolRouter = require("./routes/SwtoolRout");
+const cors = require('cors');
 
 var app = express();
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/Swtool', swtoolRouter);
+app.use(cors());
 
 
 // node 서버 포트를 5000으로 설정하는 코드 추가
