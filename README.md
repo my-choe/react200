@@ -135,3 +135,6 @@
   * [`128` NODE 등록 api 만들기 1 - insert 라우터 분기하기](https://github.com/my-choe/react200/commit/f3ff84ee9b31832a00250b29661d77f3022fd404)
   * [`129` NODE 등록 api 만들기 2 - insert쿼리 추가, response 처리하기](https://github.com/my-choe/react200/commit/80ebce9fcfcb653694a61a9b3dcb8d178da389ed)
   * [`130` REACT 등록 페이지 만들기](https://github.com/my-choe/react200/commit/b2499f440de6ecd31e351af591b8b0720c24c720)
+  * [`131` REACT 상세조회 페이지 만들기](https://github.com/my-choe/react200/commit/513c8b874a515e8bf4152f3cc8f6eb5b18067ffd)
+  * [`132` NODE 상세조회 페이지 만들기 - select 쿼리 where절 추가하기](https://github.com/my-choe/react200/commit/2e01c77878fbb19ae96096a43a1bed42cba7b60b)
+  * [`133` NODE 수정 api 만들기 1 - update 라우터 분기하기](https://github.com/my-choe/react200/commit/719d231cbee2c602c81550a2f34deb2e94e7af61)
