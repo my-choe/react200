@@ -14,6 +14,9 @@
         , swt_github_url
         , reg_date
       FROM react.react_swtool
+      <if test="is_Swtcode != null && is_Swtcode != ''">
+        WHERE swt_code = #{is_Swtcode}
+      </if>
       ORDER BY update_date DESC
   </select>
 
