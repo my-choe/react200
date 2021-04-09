@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var upload = requrie('./fileupload');
-var multer = requrie('multer');
+var upload = require('./fileupload');
+var multer = require('multer');
 
 /**
  * 문서, 이미지 같은 파일을 서버 경로에 업로드하기 위해 multer라는 패키지를 사용한다.

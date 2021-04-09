@@ -8,7 +8,8 @@ class SoftwareView extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            before_swtcode: props.match.params.swtcode
+            before_swtcode: props.match.params.swtcode,
+            selectedFile: null,
         }
     }
 
