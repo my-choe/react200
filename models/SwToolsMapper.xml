@@ -66,26 +66,25 @@
     )
   </insert>  
 
-  <update id="updateSwToolsInfo">
-  UPDATE react.react_swtool
-  SET
-    swt_toolname = #{is_Swt_toolname}
-    , swt_function = #{is_Swt_function}
-    , swt_comments = #{is_Comments},
-    , swt_demo_site = #{is_Swt_demo_site}
-    , swt_github_url = #{is_Giturl}
-    <if test="is_LabelImg != null && is_LabelImg != ''">
-      , swt_imagepath = #{is_LabelImg}
-    </if>
-    <if test="is_MainImg != null && is_MainImg != ''">
-      , swt_big_imgpath = #{is_MainImg}
-    </if>
-    <if test="is_MenualName != null && is_MenualName != ''">
-      , swt_manual_path = #{is_MenualName}
-    </if>
-      ,update_date = DATE_FORMAT(now(), '%Y%m%d%H%i%s')
-      ,update_user = #{is_Email}
-    WHERE swt_code =#{is_beforeSwtcode}
-    
+  <update id="updateSwToolsInfo"> 
+    UPDATE react.react_swtool
+    SET
+        swt_toolname = #{is_Swt_toolname}
+        , swt_function = #{is_Swt_function}
+        , swt_comments = #{is_Comments}
+        , swt_demo_site = #{is_Swt_demo_site}
+        , swt_github_url = #{is_Giturl}
+        <if test="is_LabelImg != null && is_LabelImg != ''">
+          , swt_imagepath = #{is_LabelImg}
+        </if>
+        <if test="is_MainImg != null && is_MainImg != ''">
+          , swt_big_imgpath = #{is_MainImg}
+        </if>
+        <if test="is_MenualName != null && is_MenualName != ''">
+          , swt_manual_path = #{is_MenualName}
+        </if>
+        , update_date = DATE_FORMAT(now(), '%Y%m%d%H%i%s')
+        , update_user = #{is_Email}
+    WHERE swt_code = #{is_beforeSwtcode}
   </update>
 </mapper>

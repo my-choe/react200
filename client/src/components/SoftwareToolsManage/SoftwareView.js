@@ -15,11 +15,9 @@ class SoftwareView extends Component {
     componentDidMount () {
         if(this.state.before_swtcode == 'register'){
             $('.modifyclass').hide()
-            $('#type').html("등록")
         }else{
             this.callSwToolInfoApi()
             $('.saveclass').hide()
-            $('#type').html("수정")
         }
     }
 
@@ -106,6 +104,8 @@ class SoftwareView extends Component {
                 if(body == "succ"){
                     if(type == 'save'){
                         this.sweetalertSucc('Software Tools 등록이 완료되었습니다.', false)
+                    }else if(type == "modify"){
+                        this.sweetalertSucc('Software Tools 수정이 완료되었습니다.', false)
                     }
                     setTimeout(function() {
                         this.props.history.push('/SoftwareList');
@@ -135,12 +135,13 @@ class SoftwareView extends Component {
             <section class="sub_wrap">
                 <article class="s_cnt mp_pro_li ct1">
                     <div class="li_top">
-                        <h2 class="s_tit1">Software Tools <span id="type"></span></h2>
+                        <h2 class="s_tit1">Software Tools 등록/수정</h2>
                     </div>
                     <div class="bo_w re1_wrap re1_wrap_writer">
                         <form name="frm" id="frm" action="" onsubmit="" method="post" >
                             <input id="is_Swtcode" type="hidden" name="is_Swtcode" />
                             <input id="is_Email" type="hidden" name="is_Email" value="guest" />
+                            <input id="is_beforeSwtcode" type="hidden" name="is_beforeSwtcode" value={this.state.before_swtcode} />
                             <article class="res_w">
                                 <p class="ment" style={{"text-align": "right"}}>
                                     <span class="red">(*)</span>표시는 필수입력사항 입니다.
@@ -226,7 +227,7 @@ class SoftwareView extends Component {
                                     </table>
                                     <div class="btn_confirm mt20" style={{"margin-bottom": "44px"}}>
                                         <a href="javascript:" className="bt_ty bt_ty2 submit_ty1 saveclass" 
-                                        onClick={(e) => this.submitClick('save', e)}>등록</a>
+                                        onClick={(e) => this.submitClick('save', e)}>저장</a>
                                         <a href="javascript:" className="bt_ty bt_ty2 submit_ty1 modifyclass" 
                                         onClick={(e) => this.submitClick('modify', e)}>수정</a>
                                         <Link to={'/SoftwareList'} className="bt_ty bt_ty1 cancel_ty1">취소</Link>
