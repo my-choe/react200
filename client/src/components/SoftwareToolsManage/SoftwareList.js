@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import axios from "axios";
+import Swal from 'sweetalert2'
 
 class SoftwareList extends Component {
     constructor(props) {
@@ -50,13 +51,50 @@ class SoftwareList extends Component {
                     <td>{reg_date}</td>
                     <td>
                         <Link to={'/SoftwareView/'+data.swt_code} className="bt_c1 bt_c2 w50_b">수정</Link>&nbsp;
-                        <a href="#n" class="bt_c1 w50_b" >삭제</a>
+                        <a href="#n" class="bt_c1 w50_b" id={data.swt_code} onClick={(e) => this.deleteSwtool(e)}>삭제</a>
                     </td>
                 </tr>
             )
         }
         return result
     }
+
+    deleteSwtool = (e) => {
+        var event_target = e.target
+        this.sweetalertDelete('정말 삭제하시겠습니까?', function() {
+            axios.post('/api/Swtool?type=delete', {
+                is_SwtCd : event_target.getAttribute('id')
+            })
+            .then( response => {
+                this.callSwToolListApi()
+            }).catch( error => {alert('작업중 오류가 발생하였습니다.');return false;} );
+        }.bind(this))
+    }
+
+    sweetalertDelete = (title, callbackFunc) => {
+        Swal.fire({
+            title: title,
+            text: "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes'
+          }).then((result) => {
+            if (result.value) {
+              Swal.fire(
+                'Deleted!',
+                '삭제되었습니다.',
+                'success'
+              )
+            }else{
+                return false;
+            }
+            callbackFunc()
+          })
+    }
+
+    
 
     render () {
         return (
