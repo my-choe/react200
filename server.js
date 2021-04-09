@@ -1,25 +1,24 @@
-/** 
- * //package.json 설명
- * concurrently는 여러 개의 명령어를 동시에 실행할 수 있게 도와주는 패키지다.
- * [npm install --save concurrently]
- * 추가로 nodemon 패키지를 설치한다. 
- * nodemon은 node폴더의 소스가 수정될 때 자동으로 node 서버를 재시작 시켜준다.
- * [npm install --g nodemon]
- */
-
 var express = require('express');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var swtoolRouter = require("./routes/SwtoolRout");
-const cors = require('cors');
+var fileuploadRouter = require("./routes/UploadRout");
 
 var app = express();
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/Swtool', swtoolRouter);
-app.use(cors());
+app.use('/api/upload', fileuploadRouter);
+app.use(express.static("./uploads"));
+/**
+ * express.static 함수를 사용하면 정적 파일 경로(/uploads)를 설정할 수 있다.
+ * 정적 파일 경로를 사용하면 파일 사용이 필요할 때 지정한 경로에서만 파일을 찾을 수 있다는 보안상의 이점이 있다.
+ * 또 지정 경로(/uploads)를 제외한 짧은 url로 파일 경로를 호출할 수 있다.
+ * 예를 들어,C:\react200\uploads\image 경로에 있는 react.jpg라는 이미지를 사용하기 위해
+ * uploads경로를 제외한 http://localhost:500/image/react.jpg 경로를 호출하면 된다.
+ */
 
 
 // node 서버 포트를 5000으로 설정하는 코드 추가
