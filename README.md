@@ -138,3 +138,10 @@
   * [`131` REACT 상세조회 페이지 만들기](https://github.com/my-choe/react200/commit/513c8b874a515e8bf4152f3cc8f6eb5b18067ffd)
   * [`132` NODE 상세조회 페이지 만들기 - select 쿼리 where절 추가하기](https://github.com/my-choe/react200/commit/2e01c77878fbb19ae96096a43a1bed42cba7b60b)
   * [`133` NODE 수정 api 만들기 1 - update 라우터 분기하기](https://github.com/my-choe/react200/commit/719d231cbee2c602c81550a2f34deb2e94e7af61)
+  * [`134` NODE 수정 api 만들기 2 - update 쿼리 추가, response 처리하기](https://github.com/my-choe/react200/commit/15fd5d1dfc9b31816a65041ee02a0af60a034769)
+  * [`135` REACT 수정 페이지 만들기](https://github.com/my-choe/react200/commit/a53a8f80a76e3b341635ee40c948420ec7d5ba6a)
+  * [`136` NODE 삭제 api 만들기 1 - delete 라우터 분기하기](https://github.com/my-choe/react200/commit/a696e58d7513467b5256539a76a293300547ed73)
+  * [`137` NODE 삭제 api 만들기 2 - delete 쿼리 추가, response 처리하기](https://github.com/my-choe/react200/commit/0bb26f831572f885c16d299baf0464814381ed4e)
+  * [`138` REACT 리스트 페이지 삭제 기능 구현하기](https://github.com/my-choe/react200/commit/12232c98820dce0aaf446089ed7a47320c54e13f)
+  * [`139` 파일, 이미지 업로드 api 만들기 - multer 패키지 사용하기](https://github.com/my-choe/react200/commit/ec0da10b3c3f8bf9459de410f78aa1d926723a63)
+
