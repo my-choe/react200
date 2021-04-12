@@ -144,4 +144,8 @@
   * [`137` NODE 삭제 api 만들기 2 - delete 쿼리 추가, response 처리하기](https://github.com/my-choe/react200/commit/0bb26f831572f885c16d299baf0464814381ed4e)
   * [`138` REACT 리스트 페이지 삭제 기능 구현하기](https://github.com/my-choe/react200/commit/12232c98820dce0aaf446089ed7a47320c54e13f)
   * [`139` 파일, 이미지 업로드 api 만들기 - multer 패키지 사용하기](https://github.com/my-choe/react200/commit/ec0da10b3c3f8bf9459de410f78aa1d926723a63)
+  * [`140` REACT 등록 페이지 만들기 - 파일, 이미지 업로드 api 호출하기](https://github.com/my-choe/react200/commit/860308ce70508eeeb437a89c83b957eb322b262b)
+  * [`142` REACT 상세 조회 페이지 만들기 - 파일, 이미지명 표시하기](https://github.com/my-choe/react200/commit/1dbd5855c1402b3892426d4d7b6c2c2370830eb5)
+  * [`146` NODE 회원가입 api 만들기 1 - bcrypt로 암호화하기](https://github.com/my-choe/react200/commit/5f551a5d3b8cf7ba4c3cbacec0d7fbeb4e1c7657)
+  * [`147` NODE 회원 가입 api 만들기 2 - insert 쿼리 추가하기](https://github.com/my-choe/react200/commit/efea8770eef5a5d6649cd2a1371f33b4af5ba750)
 
