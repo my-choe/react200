@@ -9,7 +9,7 @@ var multer = require('multer');
  * [npm install --save multer]
  * 
  * 같은 파일을 여러 번 업로드하는 경우, 파일명이 구분되지 않기 때문에 현재 시간 정보를 파일명에 추가해 저장한다.
- * moment 패키지를 사용해 node 서버의 날짜, 시간 정보를 가져올 ㅅ ㅜ있다.
+ * moment 패키지를 사용해 node 서버의 날짜, 시간 정보를 가져올 수있다.
  * [npm install --save moment]
  */
 router.post("/", (req, res, next) => {

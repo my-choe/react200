@@ -182,7 +182,7 @@ class SoftwareView extends Component {
         formData.append('file', this.state.selectedFile);
         return axios.post("/api/upload?type=uploads/swmanual/", formData).then(res => {
             this.setState({menualName : res.data.filename})
-            $('#is_MenualName').remove()
+            $('#is_MenualName').remove()  // 여러번 매뉴얼 파일을 업로드 하는 경우, 가장 최근에 올린 파일 1개의 경로만 DB에 저장해야 한다. 매뉴얼 파일 경로가 할당된 <input> 태그가 있다면 삭제한다.
             $('#upload_menual').prepend('<input id="is_MenualName" type="hidden"'
             +'name="is_MenualName" value="/swmanual/'+this.state.menualName+'"}/>')
         }).catch(error => {
@@ -197,7 +197,7 @@ class SoftwareView extends Component {
             if(type =='file'){
                 this.setState({fileName : res.data.filename})
                 $('#is_MainImg').remove()
-                $('#uploadimg').remove()
+                $('#uploadimg').remove() // 
                 $('#upload_img').prepend('<img id="uploadimg" src="/image/'
                 +this.state.fileName+'"/>')
                 $('#upload_img').prepend('<input id="is_MainImg" type="hidden"'
