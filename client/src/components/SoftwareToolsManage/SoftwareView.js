@@ -34,8 +34,28 @@ class SoftwareView extends Component {
                 $('#is_Giturl').val(data.swt_github_url)
                 $('#is_Comments').val(data.swt_comments)
                 $('#is_Swt_function').val(data.swt_function)
+                var manualName = data.swt_manual_path.replace('/swmanual/','')
+                var fileName = data.swt_big_imgpath.replace('/image/','')
+                var fileName2 = data.swt_imagepath.replace('/image/','')
+                $('#upload_img').prepend('<img id="uploadimg" src="'+data.swt_big_imgpath+'"/>')
+                $('#upload_img2').prepend('<img id="uploadimg2" src="'+data.swt_imagepath+'"/>')
+
+
+                $('#imagefile').val(fileName)
+                $('#imagefile2').val(fileName2)
+                $('#manualfile').val(manualName)
+
+                if($('#uploadimg').attr('src').indexOf("null") > -1){
+                    $('#uploadimg').hide()
+                }
+
+                if($('#uploadimg2').attr('src').indexOf("null") > -1){
+                    $('#uploadimg2').hide()
+                }
+
+
             } catch (error) {
-                alert('작업중 오류가 발생하였습니다.')
+                alert('작업중 에러가 발생하였습니다.')
             }
         })
         .catch( error => {alert('작업중 오류가 발생하였습니다.');return false;} );
