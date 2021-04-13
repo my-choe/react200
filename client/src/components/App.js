@@ -6,6 +6,7 @@ import Footer from './Footer/Footer';
 import LoginForm from './LoginForm';
 import SoftwareList from './SoftwareToolsManage/SoftwareList';
 import SoftwareView from './SoftwareToolsManage/SoftwareView';
+import Register from './Register/Register';
 
 /**
  * <Routh> 태그 path속성에 /:변수명 형태로 추가하면,
@@ -20,6 +21,7 @@ class App extends Component {
         <Route exact path='/' component={LoginForm} />
         <Route path='/SoftwareList' component={SoftwareList} />
         <Route path='/SoftwareView/:swtcode' component={SoftwareView} />
+        <Route path='/Register' component={Register} />
         <Footer/>
       </div>
     );
