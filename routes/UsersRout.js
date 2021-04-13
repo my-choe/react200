@@ -47,11 +47,21 @@ router.post('/', (req, res, next) => {
             req.body.mapper = 'UserMapper';
             req.body.crud = 'select';
             req.body.mapper_id = 'selectUserDpliCheck';
+
             router.use('/', dbconnect_Module);
             next('route')
         } catch (error) {
             console.log("Module > dbconnect error : " + error);
         }
+    }else if(type == 'signin'){
+        // 로그인 조회
+        var dbconnect_Module = require('./dbconnect_Module');
+
+        req.body.mapper = 'UserMapper';
+            req.body.crud = 'select';
+            req.body.mapper_id = 'selectLoginCheck';
+            router.use('/', dbconnect_Module);
+            next('route')
     }
 })
 

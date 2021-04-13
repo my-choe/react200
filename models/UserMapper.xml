@@ -38,4 +38,19 @@
       react.react_user
       WHERE useremail = #{is_Email}
   </select>
+
+  <select id="selectLoginCheck">
+    SELECT
+        username
+        , userorg
+        , useremail
+        , userpassword
+        , usermajor
+        , userphone
+        , userflag
+    FROM
+        react.react_user
+    WHERE
+        useremail = #{is_Email}
+  </select>
 </mapper>
