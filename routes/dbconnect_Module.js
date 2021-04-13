@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
+const bcrypt = require('bcrypt');
 
 router.use(bodyParser.json());
 
@@ -47,9 +48,26 @@ router.post("/", (req, res) => {
       if(results != undefined){
         string = JSON.stringify(results);
         var json = JSON.parse(string);
-        if (req.body.crud == "select") {  // select
-          res.send({ json });
-        }else{  //insert, update, delete
+        if (req.body.crud == "select") {
+          if (param.mapper_id == "selectLoginCheck") {
+            if (json[0] == undefined) {
+              res.send(null);
+            } else {
+              bcrypt.compare(req.body.is_Password, json[0].userpassword, function(
+                err,
+                login_flag
+              ) {
+                if (login_flag == true) {
+                  res.send({ json });
+                } else {
+                  res.send(null);
+                }
+              });
+            }
+          } else {
+            res.send({ json });
+          }
+        }else{
           res.send("succ");
         }
       }else{
