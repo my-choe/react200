@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
+
+let jwt = require("jsonwebtoken");
+let secretObj = require("../ignorefile/jwt");
 /**
  * salt는 해커가 비밀번호를 유추하기 어렵도록 한 번 더 암호화하는 문자열이다.
  * bcrypt 패키지 내부적으로 salt의 크기만큼의 임의의 문자열을 생성한다.
@@ -62,6 +65,32 @@ router.post('/', (req, res, next) => {
             req.body.mapper_id = 'selectLoginCheck';
             router.use('/', dbconnect_Module);
             next('route')
+    }else if(type == "SessionState"){
+        /**
+         * jsonwebtoken 패키지의 sign 함수를 사용해 아이디의 암호화된 토큰을 생성한다.
+         * email 토큰 변수에 파라미터로 전달받은 아이디(userid)를 할당한다.
+         * 비밀키(secretObj.secret)를 sign 함수의 두번째 파라미터로 호출한다.
+         * expiresIn 속성으로 토큰이 유효한 시간을 60분으로 할당한다.
+         */
+        var userid = req.body.is_Email
+        var name = req.body.is_UserName
+        try{
+            let token1 = jwt.sign(
+                { email: userid },
+                secretObj.secret,
+                { expiresIn: '60m'}
+            )
+
+            let token2 = jwt.sign(
+                { username: name },
+                secretObj.secret,
+                { expiresIn: '60m'}
+            )
+
+           res.send({"token1":token1, "token2":token2});
+        }catch(error){
+            res.send(error)
+        }
     }
 })
 
