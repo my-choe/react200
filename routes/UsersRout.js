@@ -91,6 +91,25 @@ router.post('/', (req, res, next) => {
         }catch(error){
             res.send(error)
         }
+    }else if(type == "SessionConfirm"){
+        try{
+            // 아이디와 회원명 각 변수에 할당(이때 두 변수는 암호화 된 상태)
+            let token1 = req.body.token1;
+            let token2 = req.body.token2;
+
+            if(token1 != undefined && token1 != '' && token2 != undefined && token2 != ''){
+                let decoded1 = jwt.verify(token1, secretObj.secret);
+                let decoded2 = jwt.verify(token2, secretObj.secret);
+                res.send({
+                    "token1":decoded1.email,
+                    "token2":decoded2.username
+                });
+            }else{
+                res.send({"token1":"","token2":""});
+            }
+        }catch(error){
+            res.send(error)
+        }
     }
 })
 
