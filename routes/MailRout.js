@@ -1,11 +1,3 @@
-/**
- * 메일 발송 api 호출 시 파라미터로 메일제목, 이메일(아이디), 비밀번호 전달.
- * 메일 템플릿의 [비밀번호 변경하기] 버튼 링크를 웹 사이트 주소에 이메일(아이디)과 비번 토큰을 넣은 값으로 치환한다.
- * 메일 템플릿 파일을 불러오기 위해 fs 패키지와 메일발송을 위해 nodemailer 패키지를 설치한다.
- * [npm install --save nodemailer]
- * [npm install --save fs]
- */
-
 var express = require('express');
 var router = express.Router();
 const bodyParser = require('body-parser');
@@ -21,15 +13,14 @@ router.post('/', (req, res, next) => {
   var password = req.body.is_Password;
   password = password.substr(0, 20)
   
-  // 메일서버정보세팅
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
     port: 465,
-    secure: true,   //메일발송 시 ssl을 사용해 암호화된 통신
+    secure: true,
     auth: {
       user: '@gmail.com',
-      pass: 'wjdduf1417!'
+      pass: ''
     }
   });
 
@@ -42,7 +33,7 @@ router.post('/', (req, res, next) => {
 
   setTimeout(function() {
     let mailOptions = {
-      from: '01032883398a@gmail.com',
+      from: '@gmail.com',
       to: email,
       subject: subject,
       html : toHtml

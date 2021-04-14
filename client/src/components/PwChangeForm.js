@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import $ from 'jquery';
 import axios from "axios";
+import mlogi2 from "../img/main/m_log_i2.png";
+
 
 class PwChangeForm extends Component {
     constructor (props) {
@@ -137,14 +139,14 @@ class PwChangeForm extends Component {
                         <div className="log_box">
                             <div className="in_ty1">
                                 <span className="ic_2">
-                                    <img src={require("../img/main/m_log_i2.png")} alt="" />
+                                    <img src={mlogi2} alt="" />
                                 </span>
                                 <input type="password" id="pwd_val"
                                 name="is_Password" placeholder="새 비밀번호" />
                                 </div>
                                 <div className="in_ty1">
                                 <span className="ic_2">
-                                    <img src={require("../img/main/m_log_i2.png")} alt="" />
+                                    <img src={mlogi2} alt="" />
                                 </span>
                                 <input type="password" id="pwd_cnf_val"
                                 name="is_Password" placeholder="새 비밀번호 확인" />

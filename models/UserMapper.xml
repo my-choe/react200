@@ -79,7 +79,7 @@
   </select>
 
   <select id="selectEmailTokenCheck">
-    SELECT
+      SELECT 
       username
       , userorg
       , useremail
@@ -87,18 +87,17 @@
       , usermajor
       , userphone
       , userflag
-    FROM
+      FROM
       react.react_user
-    WHERE
-      useremail = #{is_Email}
-    AND userpassword like CONCAT('%', #{is_Token}, '%')
+      WHERE useremail = #{is_Email}
+      AND userpassword like CONCAT('%', #{is_Token}, '%')
   </select>
 
-  <update>
-    UPDATE 
-      react.react_user
-    SET
+  <update id="updatePwdUser">
+      UPDATE react.react_user
+      SET
       userpassword = #{is_Password}
-    WHERE useremail = #{is_Useremail}
-  </update>
+		WHERE useremail = #{is_Useremail}
+	</update>
+	</update>
 </mapper>
