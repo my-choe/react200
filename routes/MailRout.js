@@ -29,7 +29,7 @@ router.post('/', (req, res, next) => {
     secure: true,   //메일발송 시 ssl을 사용해 암호화된 통신
     auth: {
       user: '@gmail.com',
-      pass: ''
+      pass: 'wjdduf1417!'
     }
   });
 
@@ -42,7 +42,7 @@ router.post('/', (req, res, next) => {
 
   setTimeout(function() {
     let mailOptions = {
-      from: '@gmail.com',
+      from: '01032883398a@gmail.com',
       to: email,
       subject: subject,
       html : toHtml

@@ -93,4 +93,12 @@
       useremail = #{is_Email}
     AND userpassword like CONCAT('%', #{is_Token}, '%')
   </select>
+
+  <update>
+    UPDATE 
+      react.react_user
+    SET
+      userpassword = #{is_Password}
+    WHERE useremail = #{is_Useremail}
+  </update>
 </mapper>
