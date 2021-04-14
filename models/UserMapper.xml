@@ -77,4 +77,20 @@
       useremail = #{is_Email}
     AND username = #{is_Name}
   </select>
+
+  <select id="selectEmailTokenCheck">
+    SELECT
+      username
+      , userorg
+      , useremail
+      , userpassword
+      , usermajor
+      , userphone
+      , userflag
+    FROM
+      react.react_user
+    WHERE
+      useremail = #{is_Email}
+    AND userpassword like CONCAT('%', #{is_Token}, '%')
+  </select>
 </mapper>

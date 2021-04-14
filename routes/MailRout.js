@@ -28,8 +28,8 @@ router.post('/', (req, res, next) => {
     port: 465,
     secure: true,   //메일발송 시 ssl을 사용해 암호화된 통신
     auth: {
-      user: '01032883398a@gmail.com',
-      pass: 'wjdduf1417!'
+      user: '@gmail.com',
+      pass: ''
     }
   });
 
@@ -42,7 +42,7 @@ router.post('/', (req, res, next) => {
 
   setTimeout(function() {
     let mailOptions = {
-      from: '01032883398a@gmail.com',
+      from: '@gmail.com',
       to: email,
       subject: subject,
       html : toHtml

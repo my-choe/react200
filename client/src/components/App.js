@@ -9,6 +9,7 @@ import LoginForm from './LoginForm';
 import SoftwareList from './SoftwareToolsManage/SoftwareList';
 import SoftwareView from './SoftwareToolsManage/SoftwareView';
 import Register from './Register/Register';
+import PwChangeForm from './PwChangeForm';
 
 /**
  * App.js는 react 페이지 라우터이고, 페이지 이동으로 새로고침이 발생할 때마다 코드가 실행된다.
@@ -75,6 +76,7 @@ class App extends Component {
         <Route path='/SoftwareList' component={SoftwareList} />
         <Route path='/SoftwareView/:swtcode' component={SoftwareView} />
         <Route path='/register' component={Register} />
+        <Route path='/PwChangeForm/:email/:token' component={PwChangeForm} />
         <Footer/>
       </div>
     );
