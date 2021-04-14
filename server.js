@@ -5,6 +5,7 @@ var usersRouter = require('./routes/users');
 var swtoolRouter = require("./routes/SwtoolRout");
 var fileuploadRouter = require("./routes/UploadRout");
 var usersRouter = require("./routes/UsersRout");
+var MailRout = require("./routes/MailRout");
 
 var app = express();
 
@@ -15,6 +16,7 @@ app.use("/api/upload", fileuploadRouter);
 app.use(express.static("./uploads"));
 app.use("/api/register", usersRouter);
 app.use("/api/LoginForm", usersRouter);
+app.use("/api/mail", MailRout);
 /**
  * express.static 함수를 사용하면 정적 파일 경로(/uploads)를 설정할 수 있다.
  * 정적 파일 경로를 사용하면 파일 사용이 필요할 때 지정한 경로에서만 파일을 찾을 수 있다는 보안상의 이점이 있다.
