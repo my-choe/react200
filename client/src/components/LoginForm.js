@@ -44,7 +44,6 @@ class LoginForm extends Component {
                         cookie.save('userpassword', upw
                         , { path: '/', expires })
                     })  
-
                     .catch( error => {
                         this.sweetalert('작업중 오류가 발생하였습니다.', error, 'error', '닫기');
                     });

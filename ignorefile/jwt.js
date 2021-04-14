@@ -4,5 +4,5 @@
  * [npm install --save jsonwebtoken]
  */
 let jwtObj = {};
-jwtObj.secret = ""
+jwtObj.secret = "react200"
 module.exports = jwtObj
