@@ -121,7 +121,7 @@ body{min-width:1280px; }
 .gnb > ul > li.on > a{color: #25489e;}
 
 /*main*/
-.main{height: 800px; width: 100%;background-size: 150px; background-color:#aaa; display: table; table-layout: fixed;}
+.main{height: 840px; width: 100%;background-size: 150px; background-color:#aaa; display: table; table-layout: fixed;}
 .m_login{display: table-cell; text-align: center; vertical-align: middle; }
 .m_login h3{font-size: 55px; line-height: 67px; color: #fff; font-weight: 400; letter-spacing: 0; vertical-align: middle; margin-bottom: 39px;}
 .m_login h3 span{margin-right: 17px;}
