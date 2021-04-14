@@ -126,6 +126,22 @@ router.post('/', (req, res, next) => {
         } catch (error) {
           console.log("Module > dbconnect error : "+ error);      
         }
+      }else if(type == "pwreset"){
+          // 비밀번호 재설정 시 이메일과 이름으로 회원 정보 조회
+          try {
+              // Mysql Api 모듈(CRUD)
+              var dbconnect_Module = require('./dbconnect_Module');
+
+              //Mysql 쿼리 호출정보 입력
+              req.body.mapper = 'UserMapper';//mybatis xml 파일명
+              req.body.crud = 'select';//select, insert, update, delete 중에 입력
+              req.body.mapper_id = 'selectLoginResetCheck';
+
+              router.use('/', dbconnect_Module);
+              next('route')
+          } catch (error) {
+            console.log("Module > dbconnect error : "+ error);      
+          }
       }
 })
 
