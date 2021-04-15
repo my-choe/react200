@@ -164,4 +164,6 @@
   * [`168` 이메일 토큰으로 사용자 인증하기](https://github.com/my-choe/react200/commit/ea4677f30968b8f3f13909ee8cfd733d83d321a2)
   * [`169` 비밀번호 수정 api 만들기 - 라우터 분기, 쿼리 추가하기](https://github.com/my-choe/react200/commit/a2d4a96c4deecf408b04d283ce2ed2613b916a53)
   * [`170` 비밀번호 수정 api 호출하기](https://github.com/my-choe/react200/commit/627cf38bb79e5e99d7ace31c66f5e24daad6f46b)
+  * [`172` 스케줄러 만들기 2 - node-cron 패키지 사용하기](https://github.com/my-choe/react200/commit/6cc4081ef96ae9e0f6c428c018f774a72d77efc3)
+  * [`173` 스케줄러 만들기 3 - 특정 시간에 insert 쿼리 실행하기](https://github.com/my-choe/react200/commit/7e88169005f56e73d9ada1bd657eb73ecd35db26)
 
