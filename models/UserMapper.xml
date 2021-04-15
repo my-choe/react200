@@ -99,5 +99,20 @@
       userpassword = #{is_Password}
 		WHERE useremail = #{is_Useremail}
 	</update>
-	</update>
+
+  <insert id="insertBatchlog">
+    INSERT INTO react.react_batch_log
+    (
+      batch_cd
+      , batch_nm
+      , batch_log
+      , reg_date
+    )
+    VALUES (
+      CONCAT("BL",DATE_FORMAT(now(), '%Y%m%d%H%i%s'))
+      , #{is_Batchnm}
+      , #{is_Batchlog}
+      , DATE_FORMAT(now(), '%Y%m%d%H%i%s')
+    )
+  </insert>
 </mapper>
